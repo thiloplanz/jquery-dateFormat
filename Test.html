@@ -201,6 +201,13 @@
 		assertEqual('-', $.format.date('Wed Jan 09 06:23:38 PST 2012', '-'));
 		assertEqual('9-', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'd-'));
 		assertEqual('9/', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'd/'));
+		assertEqual('9//', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'd//'));
+		assertEqual('09--', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'dd--'));
+		assertEqual('9--', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'd--'));
+		assertEqual('01 -', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'MM -'));
+		assertEqual('01- ', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'MM- '));
+		assertEqual('09  ', $.format.date('Wed Jan 09 06:23:38 PST 2012', 'dd  '));
+		assertEqual('   ', $.format.date('Wed Jan 09 06:23:38 PST 2012', '   '));
 	}}
   }); 
 // ]]>
